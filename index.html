@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>김현중 | 개발을 이해하는 IT 서비스 기획자</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    body {
+      background-color: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.95)),
+                  url("https://images.unsplash.com/photo-1498050108023-c5249f4df085") center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #c7d2fe;
+      margin-bottom: 24px;
+    }
+
+    header p {
+      max-width: 700px;
+      font-size: 1.05rem;
+      color: #d1d5db;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    section h3 {
+      font-size: 1.6rem;
+      margin-bottom: 24px;
+      border-left: 5px solid #6366f1;
+      padding-left: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background-color: #111827;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+
+    a {
+      color: #818cf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>김현중</h1>
+    <h2>개발을 이해하는 IT 서비스 기획자</h2>
+    <p>
+      아이디어에 그치지 않고<br>
+      기획 → 구조 설계 → 화면 흐름 → 기술 선택까지 연결하는<br>
+      기술 기반 서비스 기획을 지향합니다.
+    </p>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h3>소개</h3>
+    <div class="card">
+      <p>
+        저는 개발 구조를 이해하고, 기술 제약을 고려해
+        <strong>실제로 구현 가능한 서비스</strong>를 설계하는 IT 서비스 기획자입니다.
+      </p>
+      <br />
+      <ul>
+        <li>데이터가 어디서 오고 어떻게 흐르는지</li>
+        <li>개발자가 무엇을 어려워하는지</li>
+        <li>운영 단계에서 어떤 문제가 생기는지</li>
+      </ul>
+      <br />
+      <p>
+        위 기준을 바탕으로 기획서, 제안서, 발표자료를 직접 작성하며
+        다수의 공공·기술 기반 공모전에 참여했습니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h3>기술 이해 영역</h3>
+    <div class="card">
+      <ul>
+        <li>웹 서비스 구조 (Frontend / Backend 분리)</li>
+        <li>REST API 및 데이터 흐름 이해</li>
+        <li>PostgreSQL / 공간 데이터(PostGIS) 개념</li>
+        <li>AWS 기본 인프라 구조 (EC2, S3, RDS)</li>
+        <li>Git / GitHub 협업 흐름</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h3>대표 기획 프로젝트</h3>
+
+    <div class="card">
+      <h4>RealWalk</h4>
+      <p>실제 보행 동선 기반 상권 분석 서비스</p>
+      <ul>
+        <li>서비스 컨셉 및 구조 설계</li>
+        <li>공공데이터 + GIS 활용 기획</li>
+        <li>데이터 수집 → DB → API → 화면 흐름 정의</li>
+      </ul>
+      <p>
+        🔗 <a href="https://github.com/kimhj0707/realwalk" target="_blank">GitHub Repository</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>WeatherFlick</h4>
+      <p>날씨 기반 여행지 추천 서비스</p>
+      <ul>
+        <li>서비스 기능 정의 및 구조 설계</li>
+        <li>프론트엔드 / 백엔드 역할 분리 기획</li>
+        <li>관리자·배치 시스템까지 고려한 설계</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 김현중 · IT Service Planner  
+    <br />
+    GitHub: <a href="https://github.com/kimhj0707" target="_blank">github.com/kimhj0707</a>
+  </footer>
+
+</body>
+</html>
