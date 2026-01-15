@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.7;
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: calc(var(--spacing-unit) * 10) calc(var(--spacing-unit) * 3); /* 80px 24px */
+}
+section {
+  margin-bottom: calc(var(--spacing-unit) * 12); /* 96px */
+  background: var(--bg-secondary);
+  padding: calc(var(--spacing-unit) * 6);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--card-border);
+}
